@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>miniproject_asyncwork</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./sass/index.scss" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-container">
+      <!-- Logo -->
+      <div class="logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo"
+          class="logo-img">
+        <span class="logo-text">Instagram</span>
+      </div>
+
+      <!-- Search Bar -->
+      <div class="search-bar">
+        <!-- <input type="text" placeholder="Search"> -->
+          <div class="form-wrapper">
+            <form id="searchForm">
+              <input type="text" id="searchInput" placeholder="Пошук постів..." />
+              <!-- <button type="submit">Знайти</button> -->
+            </form>
+          </div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Форма пошуку -->
+
+
+  <!-- Контейнер для постів -->
+  <div id="postsContainer"></div>
+
+  <!-- Пагінація -->
+  <div class="pagination" style="display: none;">
+    <button id="prevPage">Попередня</button>
+    <span id="currentPage">Сторінка: 1</span>
+    <button id="nextPage">Наступна</button>
+  </div>
+
+  <!-- Модальне вікно для редагування -->
+  <div id="editPostModal" class="modal" style="display: none;">
+    <div class="modal-content">
+      <button id="closeModal">&times;</button> <!-- Кнопка закриття -->
+      <h2>Редагувати пост</h2>
+      <input type="text" id="titleInput" placeholder="Заголовок" required>
+      <textarea id="contentInput" placeholder="Зміст" required></textarea>
+      <button id="savePostButton">Зберегти зміни</button>
+    </div>
+  </div>
+
+  <script type="module" src="./js/modal.js"></script>
+  <script type="module" src="index.js"></script>
+
+</body>
+
+</html>
