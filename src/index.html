@@ -50,8 +50,10 @@
   <!-- Модальне вікно для редагування -->
   <div id="editPostModal" class="modal" style="display: none;">
     <div class="modal-content">
-      <button id="closeModal">&times;</button> <!-- Кнопка закриття -->
-      <h2>Редагувати пост</h2>
+      <div class="df">
+        <h2>Редагувати пост</h2>
+        <button id="closeModal">&times;</button> <!-- Кнопка закриття -->
+      </div>
       <input type="text" id="titleInput" placeholder="Заголовок" required>
       <textarea id="contentInput" placeholder="Зміст" required></textarea>
       <button id="savePostButton">Зберегти зміни</button>
